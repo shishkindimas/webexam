@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Russian</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Learn Russian</h1>
+        <img src="logo.png" alt="Logo" class="mb-2">
+        <nav>
+            <a class="text-white" href="#">Courses</a> |
+            <a class="text-white" href="#">About us</a> |
+            <a class="text-white" href="#">Contacts</a> |
+            <a class="text-white" href="test 2.html">User Account</a>
+        </nav>
+    </header>
+
+    <!-- Область уведомлений -->
+    <div class="alert alert-info text-center m-0">
+        Welcome! Check out our available courses!
+    </div>
+
+    <!-- Блок описания языковой школы -->
+    <section class="container my-5">
+        <h2>About Our Language School</h2>
+        <p>Our mission is to provide quality education for everyone intereste in learning russian. We offer a variety of cournses for all levels.</p>
+    </section>
+
+    <!-- Преимущества изучения русского языка -->
+    <section class="container">
+        <h2>Advantages of Learning Russian</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Global Language</h3>
+                <p>Russian is widely spoken around the world.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Rich Culture</h3>
+                <p>Understand Russian literature and art more deeply</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Career Opportunities</h3>
+                <p>Open up international career prospects</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Предлагаемые курсы -->
+    <section class="container my-5">
+        <h2>Courses Offered</h2>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Beginner Course</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Intermediate Course</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Advanced Course</h5>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма поиска -->
+    <section class="container my-5">
+        <h2>Search Courses</h2>
+        <form>
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Search by course name">
+                </div>
+                <div class="col">
+                    <select class="form-control">
+                        <option>Select your Level</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Пагинация курсов -->
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+
+    <!-- Списки репетиторов -->
+    <section class="container my-5">
+        <h2>Our Tutors</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Репетитор 1</li>
+            <li class="list-group-item">Репетитор 2</li>
+            <li class="list-group-item">Репетитор 3</li>
+        </ul>
+    </section>
+
+    <!-- Кнопка формы заказа -->
+    <div class="text-center my-5">
+        <button class="btn btn-info" data-toggle="modal" data-target="#orderModal">Request a Tutoring Session</button>
+    </div>
+
+    <!-- Модальное окно -->
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Request a Tutoring Session</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Your Name</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Email Address</Address>:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Contact us: info@learnrussian.com | Follow us on Facebook, Twitter, Instagram</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="C:\Users\admin\Desktop\im getting expelled\web\exam\api.js"></script>
+</body>
+</html>
